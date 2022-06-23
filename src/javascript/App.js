@@ -1,13 +1,29 @@
-// import logo from './logo.svg';
 import '../stylesheets/App.css';
-import {GlassHeader} from '../components/Header';
-import {GlassFooter} from "../components/Footer";
+import {GlassHeader} from './components/Header';
+import {GlassFooter} from "./components/Footer";
+import {
+    AccentSection,
+    FrySection,
+    MainSection,
+    OrderSection,
+    SausageSection,
+    SmoothieSection,
+    WittyRemarkSection
+} from "./components/Sections";
+
 
 function App() {
   return (
     <div className="App">
         <GlassHeader/>
-
+        <MainSection/>
+        <WittyRemarkSection/>
+        <SausageSection/>
+        <AccentSection/>
+        <FrySection/>
+        <AccentSection/>
+        <SmoothieSection/>
+        <OrderSection/>
         <GlassFooter/>
     </div>
   );

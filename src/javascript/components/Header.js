@@ -2,15 +2,15 @@ import {ContactButton, SignInButton} from './Buttons';
 
 export function GlassHeader () {
     return (
-        <div className={"headerBase"}>
-            <div className={"logo"}>
+        <div className={"glassHeaderBase"}>
+            <div className={"glassHeaderLogo"}>
                 Burger Place
             </div>
-            <div className={"menu"}>
-                <div className={"menu-item"}>
+            <div className={"glassMenu"}>
+                <div className={"glassMenuItem"}>
                     <ContactButton/>
                 </div>
-                <div className={"menu-item"}>
+                <div className={"glassMenuItem"}>
                     <SignInButton/>
                 </div>
             </div>
@@ -20,14 +20,15 @@ export function GlassHeader () {
 
 export function RegularHeader () {
     return (
-        <div className={"headerBase"}>
-            <div className={"logo"}>
+        <div className={"regularHeaderBase"}>
+            <div className={"regularHeaderLogo"}>
+                Burger Place
             </div>
-            <div className={"menu"}>
-                <div className={"menu-item"}>
+            <div className={"regularMenu"}>
+                <div className={"regularMenuItem"}>
                     <ContactButton/>
                 </div>
-                <div className={"menu-item"}>
+                <div className={"regularMenuItem"}>
                     <SignInButton/>
                 </div>
             </div>

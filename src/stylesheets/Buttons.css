@@ -1,0 +1,58 @@
+.menuButton{
+    width: 200px;
+    height: 50px;
+}
+
+.buttonTextHeader{
+    color: #4F5D75;
+}
+
+.footerButton{
+    width: 200px;
+    height: 50px;
+}
+
+.buttonTextFooter{
+    color: #000000;
+}
+
+.foodButtonLight{
+    width: 200px;
+    height: 50px;
+}
+
+.buttonTextDark{
+    color: #000000;
+}
+
+.orderButtonLight{
+    width: 200px;
+    height: 50px;
+}
+
+.foodButtonDark{
+    width: 200px;
+    height: 50px;
+}
+
+.buttonTextLight{
+    color: #ECEBE4;
+}
+
+.orderButtonDark{
+    width: 200px;
+    height: 50px;
+}
+
+.modalButton{
+    color: #4F5D75;
+    opacity: .75;
+}
+
+.galleryButton{
+
+}
+
+.trapezoid{
+
+}

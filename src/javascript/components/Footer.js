@@ -3,14 +3,14 @@ import {PortfolioButton} from "./Buttons";
 
 export function GlassFooter (){
     return(
-        <div className={"footerBase"}>
-            <div className={"portfolioLink"}>
+        <div className={"glassFooterBase"}>
+            <div className={"glassPortfolioLink"}>
                 <PortfolioButton/>
             </div>
-            <div className={"footer-logo"}>
+            <div className={"glassFooterLogo"}>
                 BP
             </div>
-            <div className={"copyright"}>
+            <div className={"glassCopyright"}>
                 © All Rights Reserved.
             </div>
         </div>
@@ -20,14 +20,14 @@ export function GlassFooter (){
 
 export function RegularFooter () {
     return(
-        <div className={"footerBase"}>
-            <div className={"portfolioLink"}>
+        <div className={"regularFooterBase"}>
+            <div className={"regularPortfolioLink"}>
                 <PortfolioButton/>
             </div>
-            <div className={"footer-logo"}>
+            <div className={"regularFooterLogo"}>
                 BP
             </div>
-            <div className={"copyright"}>
+            <div className={"regularCopyright"}>
                 © All Rights Reserved.
             </div>
         </div>
