@@ -1,4 +1,5 @@
 import {ContactButton, SignInButton} from './Buttons';
+import "../stylesheets/Header.css";
 
 export function GlassHeader () {
     return (

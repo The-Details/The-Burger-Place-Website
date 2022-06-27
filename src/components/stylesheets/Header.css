@@ -1,0 +1,61 @@
+
+/*Beginning of Glass Header Styles*/
+.glassHeaderBase{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    height: 7.5vh;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(0.35turn, rgba(234, 236, 236, 1), rgba(253, 255, 255, 0.45), rgba(255, 255, 255, 1));
+    /*filter: blur(2px);*/
+    box-shadow: 0 .5rem .75rem rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    padding: 0 2.5%;
+    /*position: sticky;*/
+    /*top: 0;*/
+}
+
+.glassHeaderLogo{
+    display: flex;
+    flex-flow: row;
+    height: 100%;
+    align-items: center;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.glassMenu{
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100%;
+    width: 15%;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.glassMenuItem{
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+}
+/*End of Glass Header Styles*/
+
+/*Beginning of Regular Header Styles*/
+.regularHeaderBase{
+
+}
+
+.regularHeaderLogo{
+
+}
+
+.regularMenu{
+
+}
+
+.regularMenuItem{
+
+}
+/*End of Regular Header Styles*/

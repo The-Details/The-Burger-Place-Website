@@ -1,5 +1,5 @@
 import {PortfolioButton} from "./Buttons";
-
+import "../stylesheets/Footer.css";
 
 export function GlassFooter (){
     return(

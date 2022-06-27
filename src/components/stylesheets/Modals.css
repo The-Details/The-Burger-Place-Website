@@ -1,0 +1,702 @@
+
+/*Beginning of Top Bun Modal*/
+.topBunModalOverlay{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.topBunModal{
+    height: calc(65%);
+    width: calc(55%);
+    z-index: 100;
+    background: #ECEBE4;
+    position: relative;
+    margin: 1.75rem auto;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    padding: 2rem;
+    /*display: grid;*/
+    /*grid-template-columns: .25fr 1fr 1.5fr .25fr;*/
+    /*grid-template-rows: .25fr 1.5fr .25fr;*/
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2.5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.topBunImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+}
+
+.topBunImage img{
+    border-radius: .5rem;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.topBunInfo{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5% 2%;
+    gap: 2%;
+}
+
+.topBunModalTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    order: 1;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.topBunInfoDivider{
+    height: .25rem;
+    width: 65%;
+    order: 2;
+    background-color: #4F5D75;
+    border-radius: .5rem;
+}
+
+.topBunModalDescription{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    order: 3;
+    font-size: 1.15rem;
+    font-weight: lighter;
+}
+
+.closeTopBunModal{
+    display: flex;
+    justify-content: start;
+    align-self: start;
+    border: none;
+    width: 5%;
+    background-color: transparent;
+}
+/*End of Top Bun Modal*/
+
+/*Beginning of Tomato Modal*/
+.tomatoModalOverlay{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.tomatoModal{
+    height: calc(65%);
+    width: calc(55%);
+    z-index: 100;
+    background: #ECEBE4;
+    position: relative;
+    margin: 1.75rem auto;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    padding: 2rem;
+    /*display: grid;*/
+    /*grid-template-columns: .25fr 1fr 1.5fr .25fr;*/
+    /*grid-template-rows: .25fr 1.5fr .25fr;*/
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2.5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.tomatoImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+}
+
+.tomatoImage img{
+    border-radius: .5rem;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.tomatoInfo{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5% 2%;
+    gap: 2%;
+}
+
+.tomatoModalTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    order: 1;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.tomatoInfoDivider{
+    height: .25rem;
+    width: 65%;
+    order: 2;
+    background-color: #4F5D75;
+    border-radius: .5rem;
+}
+
+.tomatoModalDescription{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    order: 3;
+    font-size: 1.15rem;
+    font-weight: lighter;
+}
+
+.closeTomatoModal{
+    display: flex;
+    justify-content: start;
+    align-self: start;
+    border: none;
+    width: 5%;
+    background-color: transparent;
+}
+/*End of Tomato Modal*/
+
+/*Beginning of Lettuce Modal*/
+.lettuceModalOverlay{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.lettuceModal{
+    height: calc(65%);
+    width: calc(55%);
+    z-index: 100;
+    background: #ECEBE4;
+    position: relative;
+    margin: 1.75rem auto;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    padding: 2rem;
+    /*display: grid;*/
+    /*grid-template-columns: .25fr 1fr 1.5fr .25fr;*/
+    /*grid-template-rows: .25fr 1.5fr .25fr;*/
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2.5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.lettuceImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+}
+
+.lettuceImage img{
+    border-radius: .5rem;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.lettuceInfo{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5% 2%;
+    gap: 2%;
+}
+
+.lettuceModalTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    order: 1;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.lettuceInfoDivider{
+    height: .25rem;
+    width: 65%;
+    order: 2;
+    background-color: #4F5D75;
+    border-radius: .5rem;
+}
+
+.lettuceModalDescription{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    order: 3;
+    font-size: 1.15rem;
+    font-weight: lighter;
+}
+
+.closeLettuceModal{
+    display: flex;
+    justify-content: start;
+    align-self: start;
+    border: none;
+    width: 5%;
+    background-color: transparent;
+}
+/*End of Lettuce Modal*/
+
+/*Beginning of Patty Modal*/
+.pattyModalOverlay{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.pattyModal{
+    height: calc(65%);
+    width: calc(55%);
+    z-index: 100;
+    background: #ECEBE4;
+    position: relative;
+    margin: 1.75rem auto;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    padding: 2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2.5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.pattyImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+}
+
+.pattyImage img{
+    border-radius: .5rem;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.pattyInfo{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5% 2%;
+    gap: 2%;
+}
+
+.pattyModalTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    order: 1;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.pattyInfoDivider{
+    height: .25rem;
+    width: 65%;
+    order: 2;
+    background-color: #4F5D75;
+    border-radius: .5rem;
+}
+
+.pattyModalDescription{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    order: 3;
+    font-size: 1.15rem;
+    font-weight: lighter;
+}
+
+.closePattyModal{
+    display: flex;
+    justify-content: start;
+    align-self: start;
+    border: none;
+    width: 5%;
+    background-color: transparent;
+}
+/*End of Patty Modal*/
+
+/*Beginning of BottomBun Modal*/
+.bottomBunModalOverlay{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomBunModal{
+    height: calc(65%);
+    width: calc(55%);
+    z-index: 100;
+    background: #ECEBE4;
+    position: relative;
+    margin: 1.75rem auto;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    padding: 2rem;
+    /*display: grid;*/
+    /*grid-template-columns: .25fr 1fr 1.5fr .25fr;*/
+    /*grid-template-rows: .25fr 1.5fr .25fr;*/
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2.5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomBunImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+}
+
+.bottomBunImage img{
+    border-radius: .5rem;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.bottomBunInfo{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5% 2%;
+    gap: 2%;
+}
+
+.bottomBunModalTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    order: 1;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.bottomBunInfoDivider{
+    height: .25rem;
+    width: 65%;
+    order: 2;
+    background-color: #4F5D75;
+    border-radius: .5rem;
+}
+
+.bottomBunModalDescription{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    order: 3;
+    font-size: 1.15rem;
+    font-weight: lighter;
+}
+
+.closeBottomBunModal{
+    display: flex;
+    justify-content: start;
+    align-self: start;
+    border: none;
+    width: 5%;
+    background-color: transparent;
+}
+/*End of BottomBun Modal*/
+
+/*Beginning of Common Menu Modal Components*/
+.burgerMenuModalOverlay, .sausageMenuModalOverlay,
+.fryMenuModalOverlay, .smoothieMenuModalOverlay{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.menuModal{
+    height: calc(85%);
+    width: calc(35%);
+    z-index: 100;
+    background: #ECEBE4;
+    position: relative;
+    margin: 1.75rem auto;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    padding: 2%;
+    display: grid;
+    grid-template-columns: 2.5% 82.5% 5%;
+    grid-template-rows: 5% 85% 5%;
+    /*display: flex;*/
+    /*flex-flow: column nowrap;*/
+    gap: 2.5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalCloseButton{
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+    /*flex: 1 7 0;*/
+    justify-self: end;
+    display: flex;
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+.modalHeader{
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    /*flex: 1 2 0;*/
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 5%;
+}
+
+.modalTitle{
+    font-size: 2rem;
+    font-style: italic;
+    padding-bottom: 2.5%
+}
+
+.modalDescription{
+    font-size: 1rem;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+
+}
+
+.veganIcon{
+    height: 5%;
+    width: 5%;
+    color: #4F5D75;
+    /*background-color: blue;*/
+}
+
+.descriptionText{
+    font-style: italic;
+    font-weight: lighter;
+    /*background-color: navajowhite;*/
+    color: #4F5D75;
+
+}
+
+.modalMenuItemsContainer{
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    /*flex: 5 1 0;*/
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 80%;
+    gap: 5%;
+}
+.veganItem{
+    height: 5%;
+    width: 5%;
+}
+
+.modalMenuItem{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10%;
+    border-bottom: .15rem solid rgba(79, 93, 117, 0.5);
+}
+
+.itemTitle{
+    font-size: 1.25rem;
+    /*padding-bottom: 2%;*/
+    /*background-color: cornflowerblue;*/
+}
+
+.itemDescription{
+    font-size: 1rem;
+    font-weight: lighter;
+    color: #4F5D75;
+}
+
+.modalFooter{
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    /*flex: 1 2 0;*/
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: lighter;
+    color: #4F5D75;
+    text-align: center;
+
+}
+/*End of Common Menu Modal Components*/
+
+/*Beginning of Place Order Modal Components*/
+.contactInfoModalOverlay, .uberEatsModalOverlay,
+.callUsModalOverlay, .orderThruUsModalOverlay,
+.doorDashModalOverlay{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.uberEatsModal, .contactInfoModal,
+.doorDashModal, .callUsModal, .orderThruUsModal{
+    height: calc(45%);
+    width: calc(55%);
+    z-index: 100;
+    background: #ECEBE4;
+    position: relative;
+    margin: 1.75rem auto;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    padding: 2%;
+    display: grid;
+    grid-template-columns: 2.5% 82.5% 5%;
+    grid-template-rows: 5% 85% 5%;
+    /*display: flex;*/
+    /*flex-flow: column nowrap;*/
+    gap: 2.5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.uberEatsTitle, .contactInfoTitle,
+.doorDashTitle, .callUsTitle,
+.orderThruUsTitle{
+
+}
+
+.orderModalDivider{
+
+}
+
+.uberEatsInfo, .contactInfo,
+.doorDashInfo, .callUsInfo,
+.orderThruUsInfo{
+
+}
+
+.closeUberEatsModal, .closeContactInfoModal,
+.closeDoorDashModal, .closeOrderThruUsModal,
+.closeCallUsModal{
+
+}
+/*End of Place Order Modal Components*/

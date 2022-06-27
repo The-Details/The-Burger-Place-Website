@@ -1,0 +1,539 @@
+
+/*Beginning of Main Section Styles*/
+.mainSection{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    height: 85vh;
+    justify-content: stretch;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    box-sizing: border-box;
+    padding: 1rem 0;
+}
+
+.mainLeft{
+    order: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 50%;
+    justify-content: center;
+}
+
+.gallery{
+    order: 1;
+    display: flex;
+    flex: 1 1 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoBurger{
+    height: 75%;
+    width: 65%;
+    padding: 5%;
+    justify-content: center;
+    order: 2;
+    display: grid;
+    grid-template-rows: 3fr repeat(3, 1fr) 1.5fr .5fr;
+    grid-template-columns: 65%;
+    gap: 2%;
+    /*visibility: collapse;*/
+}
+
+.topBun{
+    height: 100%;
+    width: 100%;
+    background: url("../../assets/black-buns-on-tray.jpg") no-repeat center;
+    background-size: cover;
+    border: none;
+    box-shadow: inset 0 -4px 4px rgba(0, 0, 0, 0.25), inset 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 275px 275px 25px 25px;
+}
+
+.tomato{
+    height: 100%;
+    width: 100%;
+    background: url("../../assets/vertical-tomato-farm.jpg") no-repeat center;
+    background-size: cover;
+    border: none;
+    box-shadow: inset 0 -4px 4px rgba(0, 0, 0, 0.25), inset 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px
+}
+
+.lettuce{
+    height: 100%;
+    width: 100%;
+    background: url("../../assets/uv-farm-engineers.jpg") no-repeat center;
+    background-size: cover;
+    border: none;
+    box-shadow: inset 0 -4px 4px rgba(0, 0, 0, 0.25), inset 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.patty{
+    height: 100%;
+    width: 100%;
+    background: url("../../assets/a-stack-of-vegan-patties.jpg") no-repeat center;
+    background-size: cover;
+    border: none;
+    box-shadow: inset 0 -4px 4px rgba(0, 0, 0, 0.25), inset 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.bottomBun{
+    height: 80%;
+    width: 100%;
+    background: url("../../assets/baker-kneeding-dough.jpg") no-repeat center;
+    background-size: cover;
+    border: none;
+    box-shadow: inset 0 -4px 4px rgba(0, 0, 0, 0.25), inset 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px 10px 15px 15px;
+}
+
+.galleryImages{
+    order: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5% 10%;
+    visibility: collapse;
+
+}
+
+.galleryImageLeft{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    height: calc(100%);
+    width: calc(100%);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    background-image: url("/src/assets/resturant-dining-area.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: calc(-10%);
+    margin-right: calc(-15%);
+}
+
+.galleryImageRight{
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    height: calc(100%);
+    width: calc(100%);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    background-image: url("/src/assets/black-burger-and-fries.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: -50px;
+}
+
+.mainRight{
+    order: 2;
+    display: flex;
+    flex-flow: column;
+    width: 50%;
+    height: 65%;
+    align-self: center;
+}
+
+.mainIntro{
+    display: flex;
+    order: 1;
+    flex: 2 1 0;
+    text-align: left;
+    font-size: 2.75rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding: 0 5%;
+}
+
+.mainButtons{
+    order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 2 0;
+    width: 100%;
+    height: 50%;
+    gap: 5%;
+}
+
+.galleryIndicators{
+    order: 3;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+}
+/*End of Main Section Styles*/
+
+/*Beginning of Witty Remark Section*/
+.remarkSection{
+    flex: 1 1 0;
+    display: flex;
+    box-sizing: border-box;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    height: 60vh;
+    padding: 0 30% 5%;
+}
+.remarkTitle{
+    font-size: 2.25rem;
+
+}
+.remark{
+    font-size: 1.5rem;
+}
+/*End of Witty Remark Section*/
+
+/*Beginning of Accent Section*/
+.accent{
+    height: 40vh;
+    width: 100%;
+}
+/*End of Accent Section*/
+
+/*Beginning of Common Styles*/
+.imageContainer{
+    order: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 5%;
+    gap: 5%;
+}
+/*End of Common Styles*/
+
+/*Beginning of Sausage Section*/
+.sausageSection{
+    flex: 1 1 0;
+    display: flex;
+    height: 65vh;
+    box-sizing: border-box;
+    background-color: #FFC800;
+    box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25), inset 0 -4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sausageRemarkContainer{
+    flex: 1 1 0;
+    order: 2;
+    display: flex;
+    height: 50%;
+    align-self: center;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 5%;
+    box-sizing: border-box;
+    padding: 0 5%;
+}
+
+.leftImageSausageSection{
+    order: 1;
+    height: calc(125%);
+    width: calc(100%);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    background-image: url("/src/assets/long-buns-on-tray.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: calc(-10%);
+}
+
+.centerImageSausageSection{
+    order: 2;
+    height: calc(125%);
+    width: calc(100%);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    background-image: url("/src/assets/cooked-vegan-sausages.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: calc(20%);
+}
+
+.rightImageSausageSection{
+    order: 3;
+    height: calc(125%);
+    width: calc(100%);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    background-image: url("/src/assets/cooked-and-decorated-vegan-sausages.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: calc(-25%);
+    margin-left: calc(-15%);
+}
+
+.sausageRemarkTitle{
+    flex: 1 2 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: start;
+    font-size: 2.5rem;
+}
+
+.sausageRemarkDescription{
+    flex: 2 1 0;
+    display: flex;
+    text-align: start;
+    width: 100%;
+    align-items: start;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+/*End of Sausage Section*/
+
+/*Beginning of Fry Section*/
+.frySection{
+    flex: 1 1 0;
+    display: flex;
+    height: 65vh;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #FFC800;
+    box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25), inset 0 -4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.fryRemarkContainer{
+    flex: 1 1 0;
+    display: flex;
+    height: 50%;
+    align-self: center;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 5%;
+    box-sizing: border-box;
+    padding: 0 5%;
+}
+
+.fryRemarkTitle{
+    flex: 1 2 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: start;
+    font-size: 2.5rem;
+}
+
+.fryRemarkDescription{
+    flex: 2 1 0;
+    display: flex;
+    text-align: start;
+    width: 100%;
+    align-items: start;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.leftImageFrySection{
+    order: 1;
+    height: calc(150%);
+    width: calc(100%);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    background-image: url("/src/assets/baskets-of-potatoes.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: calc(-5%);
+}
+
+.rightImageFrySection{
+    order: 2;
+    height: calc(150%);
+    width: calc(100%);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    background-image: url("/src/assets/seasoned-fries.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: calc(-10%);
+    margin-left: calc(-10%);
+}
+/*End of Fry Section*/
+
+/*Beginning of Smoothie Section*/
+.smoothieSection{
+    flex: 1 1 0;
+    display: flex;
+    height: 65vh;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #FFC800;
+    box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25), inset 0 -4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.leftImageSmoothieSection{
+    order: 1;
+    height: calc(125%);
+    width: calc(100%);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    background-image: url("/src/assets/pouring-green-smoothie.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: calc(-10%);
+}
+
+.centerImageSmoothieSection{
+    order: 2;
+    height: calc(125%);
+    width: calc(100%);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    background-image: url("/src/assets/woman-holding-a-green-smoothie.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: calc(20%);
+}
+
+.rightImageSmoothieSection{
+    order: 3;
+    height: calc(125%);
+    width: calc(100%);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    background-image: url("/src/assets/red-smoothie-in-jar.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: calc(-25%);
+    margin-left: calc(-15%);
+}
+
+.smoothieRemarkContainer{
+    flex: 1 1 0;
+    order: 2;
+    display: flex;
+    height: 50%;
+    align-self: center;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 5%;
+    box-sizing: border-box;
+    padding: 0 5%;
+}
+
+.smoothieRemarkTitle{
+    flex: 1 2 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: start;
+    font-size: 2.5rem;
+}
+
+.smoothieRemarkDescription{
+    flex: 2 1 0;
+    display: flex;
+    text-align: start;
+    width: 100%;
+    align-items: start;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+/*End of Smoothie Section*/
+
+/*Beginning of Order Section*/
+.orderSection{
+    flex: 1 1 0;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    padding: 10% 0 5% 5%;
+}
+
+.orderHeader{
+    flex: 1 1 0;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 25%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.orderHeaderLeft{
+    height: calc(100%);
+    width: calc(100%);
+}
+
+.orderHeaderTitle{
+    font-size: 2.75rem;
+    width: 100%;
+    /*background-color: blue;*/
+}
+
+.orderHeaderRight{
+    height: 75px;
+    width: calc(100%);
+}
+
+.orderRemark{
+    flex: 2 1 0;
+    display: flex;
+    text-align: center;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.orderOptions{
+    height: 100%;
+    width: 50%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+
+}
+
+.deliverySection{
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    gap: 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+.deliverySectionTitle{
+    font-size: 2rem;
+}
+
+.pickUpSection{
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    gap: 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+.pickUpSectionTitle{
+    font-size: 2rem;
+}
+/*End of Order Section*/
