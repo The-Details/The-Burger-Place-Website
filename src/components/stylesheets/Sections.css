@@ -5,10 +5,6 @@
     flex-flow: row;
     width: 100%;
     height: 85vh;
-    justify-content: stretch;
-    font-size: 1.5rem;
-    font-weight: bold;
-    font-style: italic;
     box-sizing: border-box;
     padding: 1rem 0;
 }
@@ -37,7 +33,7 @@
     order: 2;
     display: grid;
     grid-template-rows: 3fr repeat(3, 1fr) 1.5fr .5fr;
-    grid-template-columns: 65%;
+    grid-template-columns: 100%;
     gap: 2%;
     /*visibility: collapse;*/
 }
@@ -141,6 +137,7 @@
     width: 50%;
     height: 65%;
     align-self: center;
+    gap: 10%;
 }
 
 .mainIntro{
@@ -148,14 +145,76 @@
     order: 1;
     flex: 2 1 0;
     text-align: left;
-    font-size: 2.75rem;
+    font-style: italic;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 50%;
     box-sizing: border-box;
-    padding: 0 5%;
+    padding: 0 15%;
 }
+
+/*Mobile*/
+@media only screen and (max-width: 1024px){
+    .mainSection{
+        flex-flow: column nowrap;
+        height: 150vh;
+    }
+    .mainLeft{
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 0 5vw;
+    }
+    .mainRight{
+        width: 100%;
+        height: 100%;
+        gap: 0;
+    }
+    .mainIntro{
+        height: 75%;
+    }
+
+    .mainIntroText{
+        font-size: 3.5rem;
+    }
+
+    .mainButtons{
+        height: 25%;
+        padding: 5%;
+        box-sizing: border-box;
+    }
+
+    .leftImageSausageSection{
+        visibility: collapse;
+    }
+
+    .centerImageSausageSection{
+        visibility: collapse;
+    }
+
+    .leftImageFrySection{
+        visibility: collapse;
+    }
+    .centerImageSmoothieSection{
+        visibility: collapse;
+    }
+    .leftImageSmoothieSection{
+        visibility: collapse;
+    }
+
+    .orderSection{
+        margin-bottom: 10%;
+    }
+
+    .orderHeaderLeft img{
+        width: 100%;
+    }
+    .orderHeaderRight img{
+        width: 100%;
+    }
+}
+
 
 .mainButtons{
     order: 2;
@@ -188,15 +247,11 @@
     align-items: center;
     gap: 5%;
     height: 60vh;
-    padding: 0 30% 5%;
+    padding: 5% 20% 10%;
+    text-align: center;
+    font-style: italic;
 }
-.remarkTitle{
-    font-size: 2.25rem;
 
-}
-.remark{
-    font-size: 1.5rem;
-}
 /*End of Witty Remark Section*/
 
 /*Beginning of Accent Section*/
@@ -223,8 +278,9 @@
 
 /*Beginning of Sausage Section*/
 .sausageSection{
-    flex: 1 1 0;
+    flex: 1 1 auto;
     display: flex;
+    flex-flow: row nowrap;
     height: 65vh;
     box-sizing: border-box;
     background-color: #FFC800;
@@ -235,13 +291,12 @@
     flex: 1 1 0;
     order: 2;
     display: flex;
-    height: 50%;
+    height: 100%;
     align-self: center;
     flex-flow: column nowrap;
     align-items: center;
-    gap: 5%;
     box-sizing: border-box;
-    padding: 0 5%;
+    padding: 5%;
 }
 
 .leftImageSausageSection{
@@ -287,7 +342,6 @@
     width: 100%;
     align-items: center;
     justify-content: start;
-    font-size: 2.5rem;
 }
 
 .sausageRemarkDescription{
@@ -297,13 +351,16 @@
     width: 100%;
     align-items: start;
     justify-content: center;
-    font-size: 1.5rem;
+}
+
+.sausageRemarkButton{
+    flex: 1 1 0;
 }
 /*End of Sausage Section*/
 
 /*Beginning of Fry Section*/
 .frySection{
-    flex: 1 1 0;
+    flex: 1 1 auto;
     display: flex;
     height: 65vh;
     width: 100%;
@@ -315,13 +372,12 @@
 .fryRemarkContainer{
     flex: 1 1 0;
     display: flex;
-    height: 50%;
+    height: 100%;
     align-self: center;
     flex-flow: column nowrap;
     align-items: center;
-    gap: 5%;
     box-sizing: border-box;
-    padding: 0 5%;
+    padding: 5%;
 }
 
 .fryRemarkTitle{
@@ -340,7 +396,6 @@
     width: 100%;
     align-items: start;
     justify-content: center;
-    font-size: 1.5rem;
 }
 
 .leftImageFrySection{
@@ -367,11 +422,15 @@
     margin-bottom: calc(-10%);
     margin-left: calc(-10%);
 }
+
+.fryRemarkButton{
+    flex: 1 1 0;
+}
 /*End of Fry Section*/
 
 /*Beginning of Smoothie Section*/
 .smoothieSection{
-    flex: 1 1 0;
+    flex: 1 1 auto;
     display: flex;
     height: 65vh;
     width: 100%;
@@ -421,13 +480,12 @@
     flex: 1 1 0;
     order: 2;
     display: flex;
-    height: 50%;
+    height: 100%;
     align-self: center;
     flex-flow: column nowrap;
     align-items: center;
-    gap: 5%;
     box-sizing: border-box;
-    padding: 0 5%;
+    padding: 5%;
 }
 
 .smoothieRemarkTitle{
@@ -446,58 +504,83 @@
     width: 100%;
     align-items: start;
     justify-content: center;
-    font-size: 1.5rem;
+}
+
+.smoothieRemarkButton{
+    flex: 1 1 0;
 }
 /*End of Smoothie Section*/
 
 /*Beginning of Order Section*/
 .orderSection{
-    flex: 1 1 0;
+    flex: 1 1 auto;
     height: 100vh;
-    width: 100%;
+    /*width: 100%;*/
     box-sizing: border-box;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
     gap: 10%;
-    padding: 10% 0 5% 5%;
+    margin-top: 10%;
+    padding: 15% 10%;
 }
 
-.orderHeader{
+.orderHeaderContainer{
     flex: 1 1 0;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     height: 25%;
     width: 100%;
     align-items: center;
     justify-content: center;
 }
 
+.orderHeader{
+    flex: 1 1 0;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    align-items: center;
+}
+
 .orderHeaderLeft{
-    height: calc(100%);
-    width: calc(100%);
+    order: 1;
+    flex: 1 2 0;
+    display: flex;
+    justify-content: center;
+}
+
+.orderHeaderTitleContainer{
+    order: 2;
+    flex: 2 1 0;
+
 }
 
 .orderHeaderTitle{
-    font-size: 2.75rem;
-    width: 100%;
-    /*background-color: blue;*/
+    text-align: center;
 }
 
 .orderHeaderRight{
-    height: 75px;
-    width: calc(100%);
+    order: 3;
+    flex: 1 2 0;
+    display: flex;
+    justify-content: center;
 }
 
-.orderRemark{
+.orderRemarkContainer{
     flex: 2 1 0;
     display: flex;
     text-align: center;
-    width: 50%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 15%;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+}
+
+.orderRemark{
+
 }
 
 .orderOptions{
@@ -508,6 +591,7 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-content: center;
+    gap: 10%;
 
 }
 

@@ -3,12 +3,12 @@
     height: 100%;
     background-color: transparent;
     border: none;
-    font-size: 1rem;
+    font-size: 1.75rem;
 }
 
 .buttonTextHeader{
     color: #4F5D75;
-    font-size: 1rem;
+    font-size: 1.75rem;
 }
 
 .footerButton{
@@ -16,11 +16,11 @@
     height: 100%;
     background-color: transparent;
     border: none;
-    font-size: 1rem;
 }
 
 .buttonTextFooter{
     color: #000000;
+    font-size: 1.75rem;
 }
 
 .foodButtonLight{
@@ -33,7 +33,7 @@
 
 .buttonTextDark{
     color: #000000;
-    font-size: 1rem;
+    font-size: 1.75rem;
 }
 
 .orderButtonLight{
@@ -54,12 +54,12 @@
 
 .buttonTextLight{
     color: #ECEBE4;
-    font-size: 1rem;
+    font-size: 1.75rem;
 }
 
 .orderButtonDark{
-    width: 200px;
-    height: 50px;
+    width: 75%;
+    height: 10%;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -95,4 +95,36 @@
     width: calc(100%);
     border: none;
     /*clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);*/
+}
+
+.homeButton{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #4F5D75;
+    border-radius: 15px;
+    border: none;
+    gap: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1024px){
+    .orderButtonDark{
+        height: 50px;
+        width: 200px;
+    }
+}
+
+/*Mobile*/
+@media only screen and (max-width: 480px){
+    .orderButtonDark {
+        min-height: 50px;
+        width: 150px;
+    }
 }

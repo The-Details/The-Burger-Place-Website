@@ -11,12 +11,20 @@ import {
     SmoothieMenuModal,
     UberEatsModal
 } from "./Modals";
+import {Link} from "react-router-dom";
+
+
+
+function error() {
+    window.location.href = "../../404.js";
+    return null;
+}
 
 export function ContactButton(){
     const {isShowingContact, toggleContact} = useModal();
 
     return(
-        <button className={"menuButton"} onClick={toggleContact}>
+        <button className={"menuButton"} onClick={error}>
             <div className={"buttonTextHeader"}>Contact</div>
             <ContactInfoModal isShowing={isShowingContact} hide={toggleContact}/>
         </button>
@@ -27,9 +35,6 @@ export function ContactButton(){
 export function SignInButton() {
     // const {isShowingSignIn, toggleSignIn} = useModal();
     // onClick={toggleSignIn}
-    function error() {
-        return window.location.replace("404.html");
-    }
     return (
         <button className={"menuButton"} onClick={error}>
             <div className={"buttonTextHeader"}>Sign In</div>
@@ -41,8 +46,13 @@ export function SignInButton() {
 
 export function PortfolioButton() {
 
+    function backToPortfolio() {
+        window.location.href = "";
+        return null;
+    }
+
     return (
-        <button className={"footerButton"} >
+        <button className={"footerButton"} onClick={backToPortfolio}>
             <div className={"buttonTextFooter"}>Back to Portfolio</div>
         </button>
     );
@@ -61,12 +71,12 @@ export function BurgerMenuButton() {
 }
 
 export function PlaceOrderButton(){
-    const {isShowingPlaceOrder, togglePlaceOrder} = useModal();
+    // const {isShowingPlaceOrder, togglePlaceOrder} = useModal();
 
     return(
-        <button className={"orderButtonLight"} onClick={togglePlaceOrder}>
+        <button className={"orderButtonLight"} onClick={error}>
             <div className={"buttonTextDark"}>Place Order</div>
-            <OrderThruUsModal isShowing={isShowingPlaceOrder} hide={togglePlaceOrder}/>
+            {/*<OrderThruUsModal isShowing={isShowingPlaceOrder} hide={togglePlaceOrder}/>*/}
         </button>
     );
 }
@@ -112,7 +122,7 @@ export function DoorDashButton(){
     const {isShowingDoorDash, toggleDoorDash} = useModal();
 
     return(
-        <button className={"orderButtonDark"} onClick={toggleDoorDash}>
+        <button className={"orderButtonDark"} onClick={error}>
             <img src={DoorDash} alt="DoorDash"/>
             <DoorDashModal isShowing={isShowingDoorDash} hide={toggleDoorDash}/>
         </button>
@@ -124,7 +134,7 @@ export function UberEatsButton(){
     const {isShowingUberEats, toggleUberEats} = useModal();
 
     return(
-        <button className={"orderButtonDark"} onClick={toggleUberEats}>
+        <button className={"orderButtonDark"} onClick={error}>
             <img src={UberEats} alt="UberEats"/>
             <UberEatsModal isShowing={isShowingUberEats} hide={toggleUberEats}/>
         </button>
@@ -136,7 +146,7 @@ export function CallUsButton(){
     const {isShowingCallUs, toggleCallUs} = useModal();
 
     return(
-        <button className={"orderButtonDark"} onClick={toggleCallUs}>
+        <button className={"orderButtonDark"} onClick={error}>
             <div className={"buttonTextLight"}>Call Us</div>
             <CallUsModal isShowing={isShowingCallUs} hide={toggleCallUs}/>
         </button>
@@ -148,7 +158,7 @@ export function OrderThruUsButton(){
     const {isShowingOrderThruUs, toggleOrderThruUs} = useModal();
 
     return(
-        <button className={"orderButtonDark"} onClick={toggleOrderThruUs}>
+        <button className={"orderButtonDark"} onClick={error}>
             <div className={"buttonTextLight"}>Order Thru Us</div>
             <OrderThruUsModal isShowing={isShowingOrderThruUs} hide={toggleOrderThruUs}/>
         </button>
@@ -164,6 +174,14 @@ export function ClickToDiscoverButton(){
     );
 }
 
+export function ReturnHomeButton(){
+
+    return(
+            <Link className={"homeButton"} to="/">
+                <div className={"buttonTextLight"}>Home</div>
+            </Link>
+    );
+}
 
 export function GallerySelectionIndicatorButton(){
     return(

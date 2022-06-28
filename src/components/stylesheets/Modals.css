@@ -540,6 +540,7 @@
     border: none;
     width: 100%;
     height: 100%;
+    background-color: transparent;
 }
 
 .modalHeader{
@@ -555,13 +556,13 @@
 }
 
 .modalTitle{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-style: italic;
     padding-bottom: 2.5%
 }
 
 .modalDescription{
-    font-size: 1rem;
+    font-size: 1.5rem;
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
@@ -605,7 +606,7 @@
 
 .modalMenuItem{
     width: 100%;
-    height: 20%;
+    height: 15%;
     display: flex;
     flex-flow: column nowrap;
     gap: 10%;
@@ -613,13 +614,13 @@
 }
 
 .itemTitle{
-    font-size: 1.25rem;
+    font-size: 2rem;
     /*padding-bottom: 2%;*/
     /*background-color: cornflowerblue;*/
 }
 
 .itemDescription{
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: lighter;
     color: #4F5D75;
 }
@@ -633,7 +634,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: lighter;
     color: #4F5D75;
     text-align: center;
@@ -700,3 +701,108 @@
 
 }
 /*End of Place Order Modal Components*/
+
+@media only screen and (max-width: 1440px){
+
+    .topBunModal,
+    .tomatoModal,
+    .lettuceModal,
+    .pattyModal,
+    .bottomBunModal{
+        flex-flow: column;
+        height: calc(85%);
+        width: calc(65%);
+    }
+
+    .topBunImage,
+    .tomatoImage,
+    .lettuceImage,
+    .pattyImage,
+    .bottomBunImage{
+        padding: 0;
+    }
+
+    .topBunImage,
+    .tomatoImage,
+    .lettuceImage,
+    .pattyImage,
+    .bottomBunImage img{
+        border-radius: .5rem;
+        height: auto;
+        width: 25%;
+        object-fit: cover;
+
+    }
+
+
+    .topBunModalTitle,
+    .tomatoModalTitle,
+    .lettuceModalTitle,
+    .pattyModalTitle,
+    .bottomBunModalTitle {
+       text-align: center;
+    }
+
+
+    .topBunModalDescription,
+    .tomatoModalDescription,
+    .lettuceModalDescription,
+    .pattyModalDescription,
+    .bottomBunModalDescription {
+        overflow: auto;
+    }
+
+    .topBunModalDescription,
+    .tomatoModalDescription,
+    .lettuceModalDescription,
+    .pattyModalDescription,
+    .bottomBunModalDescription p{
+        margin: 0;
+        /*overflow: auto;*/
+    }
+
+    .closeTopBunModal,
+    .closeTomatoModal,
+    .closeLettuceModal,
+    .closePattyModal,
+    .closeBottomBunModal{
+        align-self: center;
+        height: 75%;
+        width: 25%;
+        background-color: #ECEBE4;
+        border-radius: .5rem;
+    }
+
+}
+
+@media only screen and (max-width: 425px){
+
+    .topBunImage,
+    .tomatoImage,
+    .lettuceImage,
+    .pattyImage,
+    .bottomBunImage{
+        visibility: collapse;
+    }
+
+    .topBunImage,
+    .tomatoImage,
+    .lettuceImage,
+    .pattyImage,
+    .bottomBunImage img{
+     visibility: collapse;
+    }
+
+    .closeTopBunModal,
+    .closeTomatoModal,
+    .closeLettuceModal,
+    .closePattyModal,
+    .closeBottomBunModal{
+        align-self: center;
+        height: 10%;
+        width: 15%;
+        background-color: #ECEBE4;
+        border-radius: .5rem;
+    }
+
+}

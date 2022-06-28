@@ -1,31 +1,18 @@
-import './components/stylesheets/App.css';
-import {GlassHeader} from './components/javascript/Header';
-import {GlassFooter} from "./components/javascript/Footer";
-import {
-    AccentSection,
-    FrySection,
-    MainSection,
-    OrderSection,
-    SausageSection,
-    SmoothieSection,
-    WittyRemarkSection
-} from "./components/javascript/Sections";
-
+import {ErrorPage} from "./components/javascript/404";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {Home} from "./components/javascript/Home";
 
 function App() {
   return (
-    <div className="App">
-        <GlassHeader />
-        <MainSection />
-        <WittyRemarkSection />
-        <SausageSection />
-        <AccentSection />
-        <FrySection />
-        <AccentSection />
-        <SmoothieSection />
-        <OrderSection />
-        <GlassFooter />
-    </div>
+      <BrowserRouter>
+          <Routes path="/">
+              <Route index element={<Home/>}/>
+              <Route path="*" element={<ErrorPage/>}/>
+          </Routes>
+      </BrowserRouter>
+
+
+
   );
 }
 

@@ -1,7 +1,7 @@
 import {
     BurgerMenuButton,
     CallUsButton, ClickToDiscoverButton,
-    DoorDashButton, FriesMenuButton, GallerySelectionIndicatorButton,
+    DoorDashButton, FriesMenuButton,
     OrderThruUsButton, PlaceOrderButton, SausageMenuButton,
     SmoothieMenuButton,
     UberEatsButton
@@ -21,6 +21,7 @@ export function MainSection(){
     const {isShowingLettuce, toggleLettuce} = useModal();
     const {isShowingPatty, togglePatty} = useModal();
     const {isShowingBottom, toggleBottom} = useModal();
+
     return(
         <div className="mainSection">
             <div className="mainLeft">
@@ -50,7 +51,7 @@ export function MainSection(){
 
             </div>
             <div className="mainRight">
-                <div className="mainIntro">We at the Burger Place believe nothing receives more TLC (Tender Love & Care) than the produce that we serve.</div>
+                <div className="mainIntro"><h1 className={"mainIntroText"}>We at the Burger Place believe nothing receives more TLC (Tender Love & Care) than the produce that we serve.</h1></div>
                 <div className="mainButtons">
                     <BurgerMenuButton/>
                     <PlaceOrderButton/>
@@ -64,8 +65,8 @@ export function MainSection(){
 export function WittyRemarkSection(){
     return(
         <div className="remarkSection">
-            <div className="remarkTitle">Mouth Waterin’ Already?!</div>
-            <div className="remark">Well, we can definitely satisfy the rest of those buds with our carefully crafted array of non-burger items of sustenance!</div>
+            <div className="remarkTitle"><h2>Mouth Waterin’ Already?!</h2></div>
+            <div className="remark"><h4>Well, we can definitely satisfy the rest of those buds with our carefully crafted array of non-burger items of sustenance!</h4></div>
         </div>
     );
 }
@@ -92,9 +93,9 @@ export function SausageSection(){
                     </div>
                 </div>
                 <div className="sausageRemarkContainer">
-                    <div className="sausageRemarkTitle">Our Sausages</div>
-                    <div className="sausageRemarkDescription">Grown in the most state of the art labs, our sausages will hit the spot without the cholesterol</div>
-                    <SausageMenuButton/>
+                    <div className="sausageRemarkTitle"><h2>Our Sausages</h2></div>
+                    <div className="sausageRemarkDescription"><h5>Grown in the most state of the art labs, our sausages will hit the spot without the cholesterol</h5></div>
+                    <div className={"sausageRemarkButton"}><SausageMenuButton/></div>
                 </div>
         </div>
     );
@@ -105,9 +106,9 @@ export function FrySection(){
     return(
         <div className="frySection">
             <div className="fryRemarkContainer">
-                <div className="fryRemarkTitle">Our Fries</div>
-                <div className="fryRemarkDescription">The finest Po-ta-tos grown right in the restaurant’s farm. No pesticides or any other unwanted side affects of mass-production. They are as fresh as they come.</div>
-                <FriesMenuButton/>
+                <div className="fryRemarkTitle"><h2>Our Fries</h2></div>
+                <div className="fryRemarkDescription"><h5>The finest Po-ta-tos grown right in the restaurant’s farm. No pesticides or any other unwanted side affects of mass-production. They are as fresh as they come.</h5></div>
+                <div className={"fryRemarkButton"}><FriesMenuButton/></div>
             </div>
             <div className="imageContainer">
                 <div className="leftImageFrySection">
@@ -137,9 +138,9 @@ export function SmoothieSection(){
                 </div>
             </div>
             <div className="smoothieRemarkContainer">
-                <div className="smoothieRemarkTitle">Our Smoothies</div>
-                <div className="smoothieRemarkDescription">Our smoothies pair well with any item we serve as being an absolutely banger by itself. Whether it is a cold or hot day our smoothies will make your day.</div>
-                <SmoothieMenuButton/>
+                <div className="smoothieRemarkTitle"><h2>Our Smoothies</h2></div>
+                <div className="smoothieRemarkDescription"><h5>Our smoothies pair well with any item we serve as being an absolutely banger by itself. Whether it is a cold or hot day our smoothies will make your day.</h5></div>
+                <div className={"smoothieRemarkButton"}><SmoothieMenuButton/></div>
             </div>
         </div>
     );
@@ -149,20 +150,22 @@ export function SmoothieSection(){
 export function OrderSection(){
     return(
         <div className="orderSection">
-            <div className="orderHeader">
-                <div className="orderHeaderLeft"><img src={orderAccentL} alt="place order accent left"/></div>
-                <div className="orderHeaderTitle">Place an Order</div>
-                <div className="orderHeaderRight"><img src={orderAccentR} alt="place order accent right"/></div>
-            </div>
-            <div className="orderRemark">Can’t wait to get those precious items of sustenance? Well, we can’t wait for you to have them!</div>
+            <div className="orderHeaderContainer">
+                <div className={"orderHeader"}>
+                    <div className="orderHeaderLeft"><img src={orderAccentL} alt="place order accent left"/></div>
+                    <div className="orderHeaderTitleContainer"><h2 className={"orderHeaderTitle"}>Place an Order</h2></div>
+                    <div className="orderHeaderRight"><img src={orderAccentR} alt="place order accent right"/></div>
+                </div>
+           </div>
+            <div className="orderRemarkContainer"><h5 className={"orderRemark"}>Can’t wait to get those precious items of sustenance? Well, we can’t wait for you to have them!</h5></div>
             <div className="orderOptions">
                 <div className="deliverySection">
-                    <div className="deliverySectionTitle">Delivery</div>
+                    <div className="deliverySectionTitle"><h5>Delivery</h5></div>
                     <DoorDashButton/>
                     <UberEatsButton/>
                 </div>
                 <div className="pickUpSection">
-                    <div className="pickUpSectionTitle">Pick-Up</div>
+                    <div className="pickUpSectionTitle"><h5>Pick-Up</h5></div>
                     <CallUsButton/>
                     <OrderThruUsButton/>
                 </div>

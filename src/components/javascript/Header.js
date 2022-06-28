@@ -8,11 +8,15 @@ export function GlassHeader () {
                 Burger Place
             </div>
             <div className={"glassMenu"}>
-                <div className={"glassMenuItem"}>
-                    <ContactButton/>
+                <div className={"glassMenuItem1"}>
+                    <div className={"glassMenuItem"}>
+                        <ContactButton/>
+                    </div>
                 </div>
-                <div className={"glassMenuItem"}>
-                    <SignInButton/>
+                <div className={"glassMenuItem2"}>
+                   <div className={"glassMenuItem"}>
+                       <SignInButton/>
+                   </div>
                 </div>
             </div>
         </div>

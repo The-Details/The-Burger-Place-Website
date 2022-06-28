@@ -6,9 +6,50 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+html {
+  color: black;
+  font-family: Inter, sans-serif;
+  font-size: 10px;
+  word-spacing: .25rem;
+
+  scrollbar-color: #FFC800 #ECEBE4;
+  scrollbar-width: thin;
+}
+
+h1{
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+h2{
+  font-size: 4rem;
+  font-weight: 750;
+}
+
+h3{
+  font-size: 3.25rem;
+  font-weight: 500;
+}
+
+h4{
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+h5{
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+
+p{
+  font-size: 1.75rem;
+  font-weight: 300;
 }
