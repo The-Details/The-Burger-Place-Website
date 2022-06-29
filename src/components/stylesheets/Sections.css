@@ -341,7 +341,7 @@
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
 }
 
 .sausageRemarkDescription{
@@ -349,7 +349,7 @@
     display: flex;
     text-align: start;
     width: 100%;
-    align-items: start;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -385,7 +385,7 @@
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     font-size: 2.5rem;
 }
 
@@ -394,7 +394,7 @@
     display: flex;
     text-align: start;
     width: 100%;
-    align-items: start;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -493,7 +493,7 @@
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     font-size: 2.5rem;
 }
 
@@ -502,7 +502,7 @@
     display: flex;
     text-align: start;
     width: 100%;
-    align-items: start;
+    align-items: flex-start;
     justify-content: center;
 }
 

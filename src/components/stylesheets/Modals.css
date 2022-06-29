@@ -91,7 +91,7 @@
 
 .closeTopBunModal{
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-self: start;
     border: none;
     width: 5%;
@@ -191,7 +191,7 @@
 
 .closeTomatoModal{
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-self: start;
     border: none;
     width: 5%;
@@ -291,7 +291,7 @@
 
 .closeLettuceModal{
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-self: start;
     border: none;
     width: 5%;
@@ -388,7 +388,7 @@
 
 .closePattyModal{
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-self: start;
     border: none;
     width: 5%;
@@ -488,7 +488,7 @@
 
 .closeBottomBunModal{
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-self: start;
     border: none;
     width: 5%;

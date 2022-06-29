@@ -47,7 +47,7 @@ export function SignInButton() {
 export function PortfolioButton() {
 
     function backToPortfolio() {
-        window.location.href = "";
+        window.location.href = "https://thedetails.studio";
         return null;
     }
 
