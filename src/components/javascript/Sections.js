@@ -39,16 +39,7 @@ export function MainSection(){
                         <BottomBunModal isShowing={isShowingBottom} hide={toggleBottom}/>
                         <ClickToDiscoverButton/>
                     </div>
-                    <div className="galleryImages">
-                        <div className="galleryImageLeft"></div>
-                        <div className="galleryImageRight"></div>
-                    </div>
                 </div>
-                <div className={"galleryIndicators"}>
-                    {/*<GallerySelectionIndicatorButton/>*/}
-                    {/*<GallerySelectionIndicatorButton/>*/}
-                </div>
-
             </div>
             <div className="mainRight">
                 <div className="mainIntro"><h1 className={"mainIntroText"}>We at the Burger Place believe nothing receives more TLC (Tender Love & Care) than the produce that we serve.</h1></div>
