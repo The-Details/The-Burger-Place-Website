@@ -6,7 +6,7 @@ function App() {
   return (
       <BrowserRouter>
           <Routes path="/the-burger-place/">
-              <Route index element={<Home/>}/>
+              <Route path="thedetails.studio/the-burger-place" index element={<Home/>}/>
               <Route path="*" element={<ErrorPage/>}/>
           </Routes>
       </BrowserRouter>
