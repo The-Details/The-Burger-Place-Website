@@ -5,7 +5,7 @@ import {Home} from "./components/javascript/Home";
 function App() {
   return (
       <BrowserRouter>
-          <Routes path="/">
+          <Routes path="/the-burger-place/">
               <Route index element={<Home/>}/>
               <Route path="*" element={<ErrorPage/>}/>
           </Routes>
